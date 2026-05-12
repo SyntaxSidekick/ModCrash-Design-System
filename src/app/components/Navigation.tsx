@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router';
-import logo from '../../imports/modcrash-logo.png';
+import logo from '../../assets/modcrash-logo.png';
 
 export function Navigation() {
   const location = useLocation();

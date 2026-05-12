@@ -1,4 +1,4 @@
-import colorPalette from '../../../imports/ModCrash_Color_Palette.png';
+import colorPalette from '../../../assets/ModCrash_Color_Palette.png';
 
 export function ColorsPage() {
   const coreColors = [

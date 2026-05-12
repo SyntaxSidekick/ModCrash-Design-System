@@ -1,4 +1,4 @@
-import logo from '../../../imports/modcrash-logo.png';
+import logo from '../../../assets/modcrash-logo.png';
 import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 
