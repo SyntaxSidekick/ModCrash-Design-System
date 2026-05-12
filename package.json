@@ -1,7 +1,10 @@
 {
-  "name": "@modcrash/my-make-file",
+  "name": "@modcrash/design-system",
+  "version": "1.0.0",
+  "description": "ModCrash Design System - Enterprise-grade design system for the ModCrash creator-tech ecosystem",
+  "author": "ModCrash LLC",
+  "license": "MIT",
   "private": true,
-  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "vite build",

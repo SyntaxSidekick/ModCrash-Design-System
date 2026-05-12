@@ -163,9 +163,13 @@ All components follow accessibility best practices:
 
 ## 📄 License
 
-This project includes components from [shadcn/ui](https://ui.shadcn.com/) used under the [MIT license](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md).
+Copyright © 2026 ModCrash LLC. All rights reserved.
 
-See [ATTRIBUTIONS.md](ATTRIBUTIONS.md) for full attribution details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This design system includes components from [shadcn/ui](https://ui.shadcn.com/) used under the [MIT license](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md).
+
+See [ATTRIBUTIONS.md](ATTRIBUTIONS.md) for full third-party attribution details.
 
 ## 🚀 Deployment
 
