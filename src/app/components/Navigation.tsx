@@ -5,7 +5,6 @@ export function Navigation() {
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: 'Home' },
     { path: '/colors', label: 'Colors' },
     { path: '/typography', label: 'Typography' },
     { path: '/spacing', label: 'Spacing' },

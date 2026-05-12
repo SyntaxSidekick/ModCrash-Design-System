@@ -13,7 +13,7 @@ import { DarkModePage } from './components/pages/DarkModePage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ModCrash-Design-System">
       <div className="min-h-screen bg-background text-foreground">
         <Navigation />
         <Routes>
