@@ -17,6 +17,7 @@ function modcrashAssetResolver() {
 }
 
 export default defineConfig({
+  base: '/ModCrash-Design-System/',
   plugins: [
     modcrashAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
