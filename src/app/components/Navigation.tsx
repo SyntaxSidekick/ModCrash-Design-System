@@ -17,11 +17,11 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-card border-b border-border backdrop-blur-sm bg-card/95">
+    <nav className="sticky top-0 z-50 bg-card border-b border-border backdrop-blur-sm bg-card/95" aria-label="Main navigation">
       <div className="max-w-[1400px] mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="ModCrash" className="h-8" />
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity" aria-label="ModCrash Design System Home">
+            <img src={logo} alt="ModCrash logo" className="h-8" />
             <span className="hidden md:inline text-sm text-muted-foreground">Design System</span>
           </Link>
 

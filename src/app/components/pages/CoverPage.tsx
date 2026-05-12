@@ -7,7 +7,7 @@ export function CoverPage() {
     <div className="min-h-[calc(100vh-80px)] flex items-center justify-center bg-gradient-to-br from-background via-background to-muted">
       <div className="max-w-4xl mx-auto px-8 text-center">
         <div className="mb-12 animate-fade-in">
-          <img src={logo} alt="ModCrash" className="h-24 mx-auto mb-8" />
+          <img src={logo} alt="ModCrash logo - orange crash icon" className="h-24 mx-auto mb-8" />
         </div>
 
         <h1 className="text-6xl font-bold mb-4 tracking-tight">

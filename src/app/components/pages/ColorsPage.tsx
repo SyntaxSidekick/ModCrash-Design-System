@@ -25,30 +25,31 @@ export function ColorsPage() {
   ];
 
   return (
-    <div className="max-w-[1400px] mx-auto px-8 py-12">
-      <div className="mb-12">
+    <article className="max-w-[1400px] mx-auto px-8 py-12">
+      <header className="mb-12">
         <h1 className="text-5xl font-bold mb-4">Color System</h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
           The ModCrash color palette reflects our creator-tech ecosystem with bold, energetic oranges
           combined with professional neutrals. Designed for both light and dark modes with WCAG AA compliance.
         </p>
-      </div>
+      </header>
 
-      <div className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Official Color Palette</h2>
+      <section className="mb-16" aria-labelledby="palette-heading">
+        <h2 id="palette-heading" className="text-3xl font-semibold mb-6">Official Color Palette</h2>
         <div className="rounded-xl overflow-hidden border border-border">
-          <img src={colorPalette} alt="ModCrash Color Palette" className="w-full" />
+          <img src={colorPalette} alt="ModCrash Color Palette showing gradient ranges from orange to black with hex values" className="w-full" />
         </div>
-      </div>
+      </section>
 
-      <div className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Core Brand Colors</h2>
+      <section className="mb-16" aria-labelledby="core-colors-heading">
+        <h2 id="core-colors-heading" className="text-3xl font-semibold mb-6">Core Brand Colors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coreColors.map((color) => (
             <div key={color.hex} className="rounded-lg border border-border overflow-hidden">
               <div
                 className="h-40 w-full"
                 style={{ backgroundColor: color.hex }}
+                aria-label={`Color swatch for ${color.name}`}
               ></div>
               <div className="p-4 bg-card">
                 <h3 className="font-semibold mb-1">{color.name}</h3>
@@ -58,16 +59,17 @@ export function ColorsPage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Neutral Colors</h2>
+      <section className="mb-16" aria-labelledby="neutral-colors-heading">
+        <h2 id="neutral-colors-heading" className="text-3xl font-semibold mb-6">Neutral Colors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {neutrals.map((color) => (
             <div key={color.hex} className="rounded-lg border border-border overflow-hidden">
               <div
                 className="h-40 w-full border-b border-border"
                 style={{ backgroundColor: color.hex }}
+                aria-label={`Color swatch for ${color.name}`}
               ></div>
               <div className="p-4 bg-card">
                 <h3 className="font-semibold mb-1">{color.name}</h3>
@@ -77,10 +79,10 @@ export function ColorsPage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Functional Colors</h2>
+      <section className="mb-16" aria-labelledby="functional-colors-heading">
+        <h2 id="functional-colors-heading" className="text-3xl font-semibold mb-6">Functional Colors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {functionalColors.map((color) => (
             <div key={color.name} className="rounded-lg border border-border overflow-hidden">
@@ -108,10 +110,10 @@ export function ColorsPage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Accessibility</h2>
+      <section className="mb-16" aria-labelledby="accessibility-heading">
+        <h2 id="accessibility-heading" className="text-3xl font-semibold mb-6">Accessibility</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-lg border border-border bg-card">
             <h3 className="font-semibold mb-3">Contrast Requirements</h3>
@@ -149,10 +151,10 @@ export function ColorsPage() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="p-6 rounded-lg bg-muted/50 border border-border">
-        <h3 className="font-semibold mb-3">Usage Guidelines</h3>
+      <section className="p-6 rounded-lg bg-muted/50 border border-border" aria-labelledby="usage-guidelines-heading">
+        <h3 id="usage-guidelines-heading" className="font-semibold mb-3">Usage Guidelines</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
           <div>
             <h4 className="font-medium mb-2 text-primary">✓ Do</h4>
@@ -173,7 +175,7 @@ export function ColorsPage() {
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }
